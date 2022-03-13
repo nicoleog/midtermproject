@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="subscribe.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        function checkEmail(emailStr) {
+            emailChars = /\S+@\S+\.\S+/;
+            if (!emailChars.test(emailStr)) {
+                alert("Invalid Email");
+                return;
+            }
+        }
+        function checkForms(){
+            checkEmail(document.getElementById("email1").value);
+        }
+    </script>
+</head>
+<body>
+    <div class="box-a">
+        <div class="logoImg"><a href="index.html"><img src="evergreenApparelLogo.png"></a></div>
+        
+        
+        <header>
+            <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
+            <div class="wrap">
+                
+                
+                <nav>
+                    
+                    <a href="topsPage.html">Tops</a>
+                    <a href="bottomsPage.html">Bottoms</a>
+                    <a href="mission.html">Our Mission</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="subscribe.html">Subscribe</a>
+                </nav>
+            </div>
+        </header>
+       <div class="content">
+            <div class="subscribe">
+            <h1>Subscribe to the Mailing List</h1>
+            <br>
+            <form class="inputs">
+                    <label for="email">Email: &nbsp; &nbsp;</label>
+                    <input type="text" id="email1" name="email1"><br><br>
+                    <button type="button" onclick="checkForms()">Submit</button>
+            </form>
+            </div>
+            <div class="info"><hr>Why subscribe?</div>
+            <div class="why">
+                <ol>
+                    <li>1. Get immediate notifications whenever new clothes drop</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    2. Get immediate notifications whenever there is a new sale going on</li>
+                    <li>3. Stay up to date on our environmental initiatives&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                </ol>
+            </div>
+            <br><br>
+            </div>  
+            
+            <footer class= "main-footer">
+                    <p>Copyright &copy; 2021 Evergreen Law</p>
+            </footer>
+        </div>
+       
+   </div>
+   
+</body>
+</html>

@@ -1,0 +1,38 @@
+.title {
+    top: 5%;
+    position: relative;
+    display: block;
+    color: rgba(0, 134, 74, .85);
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.missionWords {
+  color: rgba(0, 134, 74, .85);
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    background: white;
+    height: 800px;
+}
+
+.tropical {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.missionWords {
+    width: 350px;
+    display: inline-block;
+}
+.mission {
+    display: inline-block;
+}
+
+

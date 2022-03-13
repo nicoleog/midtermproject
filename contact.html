@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        function checkNumber(num) {
+            phoneInts = /^\d{10}$/;
+            if (!phoneInts.test(num)) {
+                alert("Invalid Phone Number");
+                return;
+            }
+        }
+        function checkEmail(emailStr) {
+            emailChars = /\S+@\S+\.\S+/;
+            if (!emailChars.test(emailStr)) {
+                alert("Invalid Email");
+                return;
+            }
+        }
+        function checkForms(){
+            checkNumber(document.getElementById("number").value);
+            checkEmail(document.getElementById("email1").value);
+        }
+    </script>
+</head>
+<body>
+    <div class="box-a">
+        <div class="logoImg"><a href="index.html"><img src="evergreenApparelLogo.png"></a></div>
+        
+        
+        <header>
+            <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
+            <div class="wrap">
+                
+                
+                <nav>
+                    
+                    <a href="topsPage.html">Tops</a>
+                    <a href="bottomsPage.html">Bottoms</a>
+                    <a href="mission.html">Our Mission</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="subscribe.html">Subscribe</a>
+                </nav>
+            </div>
+        </header>
+       <div class="content">
+            <div class="contact">
+            <h1>Contact us</h1>
+            <br>
+            <form class="inputs">
+                    <label for="name">Name:&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="number">Number:</label>
+                    <input type="text" id="number" name="number"><br><br>
+                    <label for="email">Email: &nbsp; &nbsp;</label>
+                    <input type="text" id="email1" name="email1"><br><br>
+                    <button type="button" onclick="checkForms()">Submit</button>
+            </form>
+            </div>
+            <br>
+            <div class="thef">The Founders:</div>
+            <br><br>
+            <div class="founders">
+                &nbsp;<br>
+                <div class="f">
+                    <div class="name">Felipe</div>
+                    <hr>
+                    <br>
+                    <div class="param">Email: felipe@evergreenapparel.com</div>
+                    <br>
+                    <div class="param">Number: (617) 628-5000
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                
+                <div class="f">
+                    <div class="name">Harsh</div>
+                    <hr>
+                    <br>
+                    <div class="param">Email: harsh@evergreenapparel.com</div>
+                    <br>
+                    <div class="param">Number: (617) 628-5000
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+
+                <div class="f">
+                    <div class="name">Nicole</div>
+                    <hr>
+                    <br>
+                    <div class="param">Email: nicole@evergreenapparel.com</div>
+                    <br>
+                    <div class="param">Number: (617) 628-5000
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                  
+                <div class="f">
+                    <div class="name">Nathan</div>
+                    <hr>
+                    <br>
+                    <div class="param">Email: nathan@evergreenapparel.com</div>
+                    <br>
+                    <div class="param">Number: (617) 628-5000
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                
+              </div>
+            </div>  
+            
+            <footer class= "main-footer">
+                    <p>Copyright &copy; 2021 Evergreen Law</p>
+            </footer>
+        </div>
+       
+   </div>
+   
+</body>
+</html>
