@@ -2,29 +2,32 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>frosty scarves</title>
+    <title>Evergreen Apparel</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Sketch">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <style type="text/css">
-        .allSlides{display: grid; grid-template-columns:1fr 1fr; width: 100%; height: 100%;}
+        .allSlides{display: grid; grid-template-columns:1fr 1fr 1fr; width: 100%; height: 100%;}
         .slides-wrapper{position: relative; }
-        .slides-wrapper img{width: 98%;}
+        .slides-wrapper img{width: 100%;}
         
     </style>
     <script language="javascript">
-    pics = ["clothesSlide1.jpeg", "clothesSlide2.jpeg","clothesSlide3.jpeg"];
+    pics1 = ["summer1.jpeg", "summer2.jpeg","summer3.jpeg"];
+    pics2 = ["summer4.jpeg", "summer5.jpeg","summer6.jpeg"];
+    pics3 = ["summer7.jpeg", "summer8.jpeg","summer9.jpeg"];
     var picsIndex=0;
     var picsIndex2=0;
+    var picsIndex3=0;
     
-    $(document).ready(function() { slideShow(); slideShow2(); })
+    $(document).ready(function() { slideShow(); slideShow2(); slideShow3(); })
     function slideShow()
     { $("#slide img").fadeTo(4000,1,nextSlide);}
     function nextSlide()
     {
         picsIndex++;
-        picsIndex= picsIndex== pics.length? 0: picsIndex;
-        $("#slide img").attr("src", pics[picsIndex]);
+        picsIndex= picsIndex== pics1.length? 0: picsIndex;
+        $("#slide img").attr("src", pics1[picsIndex]);
         $("#slide img").fadeIn(4000,slideShow);
     }
     function slideShow2()
@@ -32,25 +35,30 @@
     function nextSlide2()
     {
         picsIndex2++;
-        picsIndex2= picsIndex2== pics.length? 0: picsIndex2;
-        $("#slide2 img").attr("src", pics[picsIndex2]);
+        picsIndex2= picsIndex2== pics2.length? 0: picsIndex2;
+        $("#slide2 img").attr("src", pics2[picsIndex2]);
         $("#slide2 img").fadeIn(4000,slideShow2);
+    }
+    function slideShow3()
+    { $("#slide3 img").fadeTo(4000,1,nextSlide3);}
+    function nextSlide3()
+    {
+        picsIndex3++;
+        picsIndex3= picsIndex3== pics3.length? 0: picsIndex3;
+        $("#slide3 img").attr("src", pics3[picsIndex3]);
+        $("#slide3 img").fadeIn(4000,slideShow3);
     }
     </script>
 </head>
 <body>
-    <div class="box-a">
+
         <div class="logoImg"><a href="index.html"><img src="evergreenApparelLogo.png"></a></div>
         
         
         <header>
             <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
             <div class="wrap">
-                
-                
                 <nav>
-                    
-                    <!-- <a href="index.html">Home</a> -->
                     <a href="catalogue.html">Catalogue</a>
                     <a href="index.html">Our Mission</a>
                     <a href="index.html">Reviews</a>
@@ -59,38 +67,45 @@
                 </nav>
             </div>
         </header>
-        <!-- <div class="banner">
-           <h1>frosty scarves</h1>
-           <h2>est. 2022</h2>
-       </div> -->
+
        <div class="content">
-           
-           
-           <!-- <div class="wrap2"><h2>Eco friendly clothing</h2></div> -->
-           <!-- <div class="photos">
-               <img src="#" id="1">
-               <img src="#" id="2">
-               <img src="#" id="3">
-           </div> -->
+           <br>
+         <div class=summerCollection>
+            <h3>Introducing</h3>
+            <h1>New Summer 2022 Collection</h1>
+            <h3>by Evergreen Apparel</h3>
+                <br>
+          
         <div class=allSlides >
            	<div class='slides-wrapper'>
-           		<div id='slide'>
-           			<img src="clothesSlide1.jpeg" />
-           		</div>
+           		<div id='slide'><img src="summer1.jpeg" /></div>
            	</div>
             <div class='slides-wrapper'>
-             <div id='slide2'>
-                 <img src="clothesSlide1.jpeg" />
-             </div>
+             <div id='slide2'><img src="summer3.jpeg" /></div>
+            </div>
+            <div class='slides-wrapper'>
+             <div id='slide3'><img src="summer6.jpeg" /></div>
             </div>
          </div>  
-           
-           <footer class= "main-footer">
-                <p>Copyright &copy; 2021 Evergreen Law</p>
-           </footer>
+    
+         
+         <p>Limited Time Free Shipping And Returns</p>
+         <a href="catalogue.html">Shop Now</a>
+
+         <br>
+         </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class= "main-footer">
+             <p>Copyright &copy; 2021 Evergreen Law</p>
+        </footer>
        </div>
-       
-   </div>
+
+
    
 </body>
 </html>
