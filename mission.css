@@ -1,42 +1,56 @@
-.title {
-    top: 5%;
-    position: relative;
-    display: block;
-    font-size: 30px;
-    padding-bottom: 50px;
-    color: rgba(0, 134, 74, .5);
-}
-
-.missionWords {
-  color: rgba(0, 134, 74, .85);
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-  vertical-align: 100%;
-}
-
-
-
-
 .content{
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 150px;
     background: white;
     height: 800px;
 }
 
-.tropical {
-    display: inline-block;
-    padding-top: 20px;
+.title {
+    top: 5%;
+    position: relative;
+    display: block;
+    color: rgba(0, 134, 74, .5);
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.imgText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .missionWords {
+    color: rgba(0, 134, 74, .85);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
     width: 350px;
+    height: 10%;
     display: inline-block;
+    position: relative;
 }
-.mission {
+
+.tropical {
     display: inline-block;
+    padding-top: 20px;
+    position: relative
+}
+
+@media only screen and (max-width: 700px) {
+
+    .missionWords {
+        display: inline;
+    }
+
+    .tropical {
+        display: block;
+    }
+
+    .imgText {
+        display: block;
+    }
 }
 
 
