@@ -9,9 +9,10 @@
 }
 
 .title{
-    padding-top: 1%;
-    font-family: sans-serif;
-    font-size: 48px;
+    top: 2%;
+    position: relative;
+    color: rgba(0, 134, 74, .5);
+    font-size: 30px;
 }
 
 .subscribe{
@@ -25,9 +26,12 @@
 }
 
 .info {
-    padding-top: 2%;
-    font-size: 48px;
-    font-family: sans-serif;
+    font-size: 30px;
+    top: 5%;
+    position: relative;
+    display: block;
+    color: rgba(0, 134, 74, .5);
+    padding-bottom: 50px;
 }
 
 .why {

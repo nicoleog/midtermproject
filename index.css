@@ -47,7 +47,7 @@ header{
 }
 .logo{
     float: left;
-    padding-left: 40%;
+    padding-left: 38%;
     padding-top: 30px;
     padding-bottom: 15px;
     left: 8%;
@@ -81,7 +81,7 @@ header{
 nav{
     float: left;
     position: absolute;
-    left: 28%;
+    left: 22%;
     line-height: 100px;
     padding-top: 50px;
 }
