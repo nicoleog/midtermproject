@@ -12,11 +12,17 @@
             emailChars = /\S+@\S+\.\S+/;
             if (!emailChars.test(emailStr)) {
                 alert("Invalid Email");
-                return;
+                return false;
             }
+            return true;
         }
         function checkForms(){
-            checkEmail(document.getElementById("email1").value);
+            if(checkEmail(document.getElementById("email1").value)) {
+                document.getElementById("success").innerHTML = "Contact form submitted.";
+                document.getElementById("email1").value = "";
+            } else {
+                document.getElementById("success").innerHTML = "";
+            }
         }
     </script>
 </head>
@@ -28,10 +34,7 @@
         <header>
             <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
             <div class="wrap">
-                
-                
                 <nav>
-                    
                     <a href="topsPage.html">Tops</a>
                     <a href="bottomsPage.html">Bottoms</a>
                     <a href="mission.html">Our Mission</a>
@@ -51,19 +54,24 @@
                     <input type="text" id="email1" name="email1"><br><br>
                     <button type="button" onclick="checkForms()">Submit</button>
             </form>
+            <div id="success"></div>
             </div>
             <div class="info"><hr><h2>Why subscribe?</h2></div>
+            <br><br>
             <div class="why">
                 <ol>
                     <li>1. Get immediate notifications whenever new clothes drop</li>
+                    <br>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     2. Get immediate notifications whenever there is a new sale going on</li>
+                    <br>
                     <li>3. Stay up to date on our environmental initiatives&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <br>
                 </ol>
             </div>
             <br><br>
             <footer class= "main-footer">
-                    <p>Copyright &copy; 2021 Evergreen Apparel</p>
+                    <p>Copyright &copy; 2021 Evergreen Law</p>
             </footer>
             </div>  
             
