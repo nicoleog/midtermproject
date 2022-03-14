@@ -27,6 +27,10 @@
         function checkForms(){
             if (checkNumber(document.getElementById("number").value) && checkEmail(document.getElementById("email1").value)) {
                     document.getElementById("success").innerHTML = "Contact form submitted.";
+                    document.getElementById("fname").value = "";
+                    document.getElementById("number").value = "";
+                    document.getElementById("email1").value = "";
+                    document.getElementById("texter").value = "";
                 } else {
                     document.getElementById("success").innerHTML = "";
                 }
@@ -66,19 +70,15 @@
                     <input type="text" id="number" name="number"><br><br>
                     <label for="email">Email: &nbsp; &nbsp;</label>
                     <input type="text" id="email1" name="email1"><br><br>
-                    <label for="text1">Message: </label> 
+                    <label for="text1"> Message: </label> 
                     <textarea id="texter" rows="2" cols="25"></textarea><br><br>
                     <button type="button" onclick="checkForms()">Submit</button>
             </form>
-            </div>
             <div id="success"></div>
+            </div>
             <br>
             <div class="thef"><h2>The Founders:</h2></div>
-            <br>
-            <div class = "groupPic">
-                  <img src="group.jpeg" width="400">
-              </div>
-            <br>
+            <br><br>
             <div class="founders">
                 &nbsp;<br>
                 <div class="f">
@@ -87,7 +87,9 @@
                     <br>
                     <div class="param">Email: felipe@evergreenapparel.com</div>
                     <br>
-                    <div class="param">Number: (617) 628-5000</div>
+                    <div class="param">Number: (617) 628-5000
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
                 </div>
                 
                 <div class="f">
@@ -96,7 +98,9 @@
                     <br>
                     <div class="param">Email: harsh@evergreenapparel.com</div>
                     <br>
-                    <div class="param">Number: (617) 628-5000</div>
+                    <div class="param">Number: (617) 628-5000
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
                 </div>
 
                 <div class="f">
@@ -105,7 +109,9 @@
                     <br>
                     <div class="param">Email: nicole@evergreenapparel.com</div>
                     <br>
-                    <div class="param">Number: (617) 628-5000</div>
+                    <div class="param">Number: (617) 628-5000
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
                 </div>
                   
                 <div class="f">
@@ -114,16 +120,20 @@
                     <br>
                     <div class="param">Email: nathan@evergreenapparel.com</div>
                     <br>
-                    <div class="param">Number: (617) 628-5000</div>
+                    <div class="param">Number: (617) 628-5000
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
                 </div>
                 
               </div>
-              <div class="footer"><footer class= "main-footer">
-                      <p>Copyright &copy; 2021 Evergreen Apparel</p>
-              </footer> </div>
-    </div>  
+              <footer class= "main-footer">
+                      <p>Copyright &copy; 2021 Evergreen Law</p>
+              </footer>
+            </div>  
             
- 
+            
+        
+       
 
    
 </body>
