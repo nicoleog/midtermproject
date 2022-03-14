@@ -50,6 +50,9 @@
     .imgText {
         display: block;
     }
+    .content{
+        height: 1100px;
+    }
 }
 
 
