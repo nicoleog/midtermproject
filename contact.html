@@ -12,19 +12,24 @@
             phoneInts = /^\d{10}$/;
             if (!phoneInts.test(num)) {
                 alert("Invalid Phone Number");
-                return;
+                return false;
             }
+            return true;
         }
         function checkEmail(emailStr) {
             emailChars = /\S+@\S+\.\S+/;
             if (!emailChars.test(emailStr)) {
                 alert("Invalid Email");
-                return;
+                return false;
             }
+            return true;
         }
         function checkForms(){
-            checkNumber(document.getElementById("number").value);
-            checkEmail(document.getElementById("email1").value);
+            if (checkNumber(document.getElementById("number").value) && checkEmail(document.getElementById("email1").value)) {
+                    document.getElementById("success").innerHTML = "Contact form submitted.";
+                } else {
+                    document.getElementById("success").innerHTML = "";
+                }
         }
     </script>
 </head>
@@ -61,9 +66,12 @@
                     <input type="text" id="number" name="number"><br><br>
                     <label for="email">Email: &nbsp; &nbsp;</label>
                     <input type="text" id="email1" name="email1"><br><br>
+                    <label for="text1">Message: </label> 
+                    <textarea id="texter" rows="2" cols="25"></textarea><br><br>
                     <button type="button" onclick="checkForms()">Submit</button>
             </form>
             </div>
+            <div id="success"></div>
             <br>
             <div class="thef"><h2>The Founders:</h2></div>
             <br>
