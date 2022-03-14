@@ -1,7 +1,6 @@
 h1 {
     top: 5%;
     position: relative;
-    color: rgba(0, 134, 74, .5);
     font-size: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -32,7 +31,7 @@ h1 {
     letter-spacing: 4px;
     font-size: 25px;
     margin: 0 10px;
-    color: black;
+    color: rgba(0, 134, 74, .5);
 }
 .clothingType {
     /* border:1px; */
