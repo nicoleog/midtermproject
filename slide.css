@@ -1,13 +1,12 @@
-
-
-h2 {
+.title{
     top: 5%;
     position: relative;
     color: rgba(0, 134, 74, .5);
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 
 /* Slideshow container */
 .carrousel {

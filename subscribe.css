@@ -9,7 +9,7 @@
 }
 
 .title{
-    top: 2%;
+    /* top: 5%; */
     position: relative;
     color: rgba(0, 134, 74, .5);
     font-size: 30px;
@@ -17,7 +17,10 @@
 
 .subscribe{
     display: block;
-    padding: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     /* border: 1px solid red; */
 }
 
