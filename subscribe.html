@@ -18,7 +18,7 @@
         }
         function checkForms(){
             if(checkEmail(document.getElementById("email1").value)) {
-                document.getElementById("success").innerHTML = "Contact form submitted.";
+                document.getElementById("success").innerHTML = "You have been subscribed! You will receive and email shortly.";
                 document.getElementById("email1").value = "";
             } else {
                 document.getElementById("success").innerHTML = "";
@@ -54,7 +54,7 @@
                     <input type="text" id="email1" name="email1"><br><br>
                     <button type="button" onclick="checkForms()">Submit</button>
             </form>
-            <div id="success"></div>
+            <div id="success" style="color:red; margin-top: 10px; font-size: 20px"></div>
             </div>
             <div class="info"><hr><h2>Why subscribe?</h2></div>
             <br><br>
