@@ -3,7 +3,7 @@
     position: absolute;
     top: 3%;
     background: white;
-    height: 1100px;
+    height: 1050px;
     /* background-image: url("background.jpg"); */
 }
 
@@ -39,8 +39,11 @@
 }
 
 .f {
-    flex: auto;
-    
+    /* flex: auto; */
+    /* display: inline-block; */
+    display: grid; 
+    grid-template-columns:repeat(auto-fit, minmax(200px,4fr));
+    width: 100%;
 } 
 
 .thef {
@@ -54,11 +57,24 @@
 
 .name {
     font-size: 24px;
+    padding-top: 25px;
+    text-decoration: underline;
 }
 
 .param{
+    padding: 10px;
 }
 
 .head{
     position: absolute;
+}
+
+@media screen and (max-width: 860px) {
+    /* .f {
+        display:flex;
+    } */
+    .content{
+        height: 1200px;
+
+    }
 }
