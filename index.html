@@ -50,26 +50,42 @@
         $("#slide3 img").attr("src", pics3[picsIndex3]);
         $("#slide3 img").fadeIn(4000,slideShow3);
     }
+    
+    function myFunction() {
+      var x = document.getElementById("links");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
     </script>
 </head>
 <body>
 
-        <div class="logoImg"><a href="index.html"><img src="evergreenApparelLogo.png"></a></div>
+    
         
         
         <header>
-            <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
-            <div class="wrap">
-                <nav>
-                    <ul>
-                    <li><a href="topsPage.html">Tops</a></li>
-                    <li><a href="bottomsPage.html">Bottoms</a></li>
-                    <li><a href="mission.html">Our Mission</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="subscribe.html">Subscribe</a></li>
-                </ul>
-                </nav>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <div class="wrapper">
+                <div class="topBar">
+              <a href="index.html"><img src="evergreenApparelLogo.png"></a>
+              <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
+              </div>
+              <div id="links">
+                  <a href="topsPage.html">Tops</a>
+                  <a href="bottomsPage.html">Bottoms</a>
+                  <a href="mission.html">Our Mission</a>
+                  <a href="reviews.html">Reviews</a>
+                  <a href="contact.html">Contact Us</a>
+                  <a href="subscribe.html">Subscribe</a>
+              </div>
+
+              <a href="javascript:void(0);" class="thing" onclick="myFunction()" style=" background-color: rgb(118, 166, 144);">
+                <i class="fa fa-bars" style="font-size:30px;"></i>
+              </a>
             </div>
         </header>
 

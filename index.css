@@ -1,3 +1,57 @@
+.header, .wrapper {
+    z-index: 100;
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(118, 166, 144);
+}
+
+.wrapper #links {
+  display: none;
+}
+
+.wrapper a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.wrapper a.thing {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+
+.topBar {
+ background-color: rgba(0, 134, 74, .2);
+ color: white;
+ height: 130px;
+ 
+}
+.topBar img{
+    width: 125px;
+    height: 125px;
+    float: left;
+    padding: 2px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: "sans-serif";
+    color: white;
+    letter-spacing: 5px;
+    padding-left: 30px;
+    text-align: center;
+
+}
 h1 {
     color: white;
     text-shadow: 0 0 1px #133A1B;
@@ -34,69 +88,7 @@ h3 {
 body{
     text-align: center;
 }
-.wrapper{
-    width:1170px
-    margin: 0 auto;
-}
-header{
-    height: 150px;
-    background: rgba(0, 134, 74, .5);
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-}
-.logo{
-    float: left;
-    padding-left: 38%;
-    padding-top: 30px;
-    padding-bottom: 15px;
-    left: 8%;
-    
-}
-.logoImg img{
-    width: 150px;
-    height: 150px;
-    float: left;
-    padding: 1px;
-    padding-left: 20px;
 
-    
-}
-
-.logoImg a{
-    display:block;
-    position: absolute;
-
-}
-.logo a{
-    text-decoration: none;
-    font-size: 30px;
-    font-family: "sans-serif";
-    color: white;
-    letter-spacing: 5px;
-    padding-left: 30px;
-            
-    
-}
-nav{
-    float: left;
-    position: absolute;
-    left: 22%;
-    line-height: 100px;
-    padding-top: 50px;
-}
-nav a{
-    text-decoration: none;
-    font-family: "sans-serif";
-    text-transform: lowercase;
-    letter-spacing: 4px;
-    font-size: 20px;
-    margin: 0 10px;
-    color: #fff;
-    z-index: 1;
-    display: inline;
-    
-}
 
 .content{
     width: 100%;
@@ -105,13 +97,10 @@ nav a{
     background: white;
     
 }
-li {
-    list-style: none;
-    display: inline;
-}
+
 
 .main-footer{
-    background:rgba(0, 134, 74, .5);
+    background-color: rgb(118, 166, 144);
     color: white;
     text-align:center;
     padding: 10px;
@@ -125,13 +114,10 @@ li {
     padding: 10px;
 }
 
-@media only screen and (max-width: 1150px){
+@media only screen and (max-width: 700px){
     .logo a{
-        /* font-size: 15px; */
-    }
-    nav a{
-        font-size: 15px;
-        
+        font-size: 25px;
+
     }
 
 }

@@ -14,18 +14,38 @@
     </style>
 </head>
 <body>
-        <div class="logoImg"><a href="index.html"><img src="evergreenApparelLogo.png"></a></div>
-        <header>
-            <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
-                <nav>
-                    <a href="topsPage.html">Tops</a>
-                    <a href="bottomsPage.html">Bottoms</a>
-                    <a href="mission.html">Our Mission</a>
-                    <a href="reviews.html">Reviews</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="subscribe.html">Subscribe</a>
-                </nav>
-        </header>
+    <header>
+    <script language="javascript">
+        function myFunction() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="wrapper">
+            <div class="topBar">
+          <a href="index.html"><img src="evergreenApparelLogo.png"></a>
+          <div class="logo"><a href="index.html">Evergreen Apparel</a></div>
+          </div>
+          <div id="links">
+              <a href="topsPage.html">Tops</a>
+              <a href="bottomsPage.html">Bottoms</a>
+              <a href="mission.html">Our Mission</a>
+              <a href="reviews.html">Reviews</a>
+              <a href="contact.html">Contact Us</a>
+              <a href="subscribe.html">Subscribe</a>
+          </div>
+
+          <a href="javascript:void(0);" class="thing" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </header>
 
         <div class="content">
             <div class="clothingType">
