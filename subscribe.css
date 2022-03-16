@@ -4,7 +4,7 @@
     position: absolute;
     top: 150px;
     background: white;
-    height: 1000px;
+    height: 600px;
     /* background-image: url("background.jpg"); */
 }
 
@@ -31,7 +31,6 @@
     position: relative;
     display: block;
     color: rgba(0, 134, 74, .5);
-    padding-bottom: 50px;
 }
 
 .why {
@@ -40,7 +39,18 @@
     font-size: 24px;
 }
 
+.whySubscribe {
+    background-color: rgba(0, 134, 74, .2);
+    padding: 30px;
+}
 .head{
     position: absolute;
 }
 
+@media screen and (max-width: 675px) {
+
+    .content{
+        height: 800px;
+
+    }
+}
