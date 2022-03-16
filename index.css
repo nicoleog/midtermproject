@@ -1,3 +1,8 @@
+
+.thing i{
+    font-size:30px;
+}
+
 .header, .wrapper {
     z-index: 100;
 }
@@ -20,7 +25,7 @@
 }
 
 .wrapper a.thing {
-  background: black;
+  background-color: rgb(118, 166, 144);
   display: block;
   position: absolute;
   right: 0;
