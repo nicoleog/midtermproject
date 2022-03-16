@@ -26,7 +26,7 @@
         }
         function checkForms(){
             if (checkNumber(document.getElementById("number").value) && checkEmail(document.getElementById("email1").value)) {
-                    document.getElementById("success").innerHTML = "Contact form submitted.";
+                    document.getElementById("success").innerHTML = "Contact form submitted! You will receive a response shortly.";
                     document.getElementById("fname").value = "";
                     document.getElementById("number").value = "";
                     document.getElementById("email1").value = "";
@@ -74,7 +74,7 @@
                     <textarea id="texter" rows="2" cols="25"></textarea><br><br>
                     <button type="button" onclick="checkForms()">Submit</button>
             </form>
-            <div id="success"></div>
+            <div id="success" style="color:red; margin-top: 10px; font-size: 20px"></div>
             </div>
             <br>
             <div class="thef"><h2>The Founders:</h2></div>
